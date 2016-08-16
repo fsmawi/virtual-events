@@ -1,0 +1,14 @@
+/_ide_helper.php
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+/.idea
+
+public/files/documents/*
+public/files/imgs/*
+!public/files/documents/index.php
+!public/files/imgs/index.php
+

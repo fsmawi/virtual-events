@@ -1,0 +1,52 @@
+<form name="companyForm" ng-submit="submitForm()" novalidate> 
+	
+	<div class="form-group" ng-class="{ 'has-error' : companyForm.name.$invalid && !companyForm.name.$pristine }">
+		<label>Name</label>
+		<input type="text" name="name" class="form-control" ng-model="name" required>
+        <p ng-show="companyForm.name.$invalid && !companyForm.name.$pristine" class="help-block">Name is required.</p>
+	</div>
+
+	<div class="form-group" ng-class="{ 'has-error' : companyForm.address.$invalid && !companyForm.address.$pristine }">
+		<label>Address</label>
+		<textarea name="address" class="form-control" rows="3" ng-model="address" required></textarea>
+        <p ng-show="companyForm.address.$invalid && !companyForm.address.$pristine" class="help-block">Address is required.</p>		
+	</div>
+
+	<div class="form-group" ng-class="{ 'has-error' : companyForm.description.$invalid && !companyForm.description.$pristine }">
+		<label>Description</label>
+		<textarea name="description" class="form-control" rows="3" ng-model="description" required></textarea>
+        <p ng-show="companyForm.description.$invalid && !companyForm.description.$pristine" class="help-block">Description is required.</p>		
+	</div>
+
+
+	<div class="form-group" ng-class="{ 'has-error' : companyForm.phone.$invalid && !companyForm.phone.$pristine }">
+		<label>Phone</label>
+		<input type="text" name="phone" class="form-control" ng-model="phone" required>
+        <p ng-show="companyForm.phone.$invalid && !companyForm.phone.$pristine" class="help-block">Phone is required.</p>
+	</div>
+
+	<div class="form-group" ng-class="{ 'has-error' : companyForm.admin_name.$invalid && !companyForm.admin_name.$pristine }">
+		<label>Admin Name</label>
+		<input type="text" name="admin_name" class="form-control" ng-model="admin_name" required>
+        <p ng-show="companyForm.admin_name.$invalid && !companyForm.admin_name.$pristine" class="help-block">Admin Name is required.</p>
+	</div>
+
+	<div class="form-group" ng-class="{ 'has-error' : companyForm.admin_email.$invalid && !companyForm.admin_email.$pristine }">
+		<label>Admin Email</label>
+		<input type="email" name="admin_email" class="form-control" ng-model="admin_email" required>
+        <p ng-show="companyForm.admin_email.$invalid && !companyForm.admin_email.$pristine" class="help-block">Your email address is invalid</p>
+	</div>
+
+	<div class="form-group">
+		<label>Logo</label>
+		<input type="file" name="logo" class="form-control" file-model="logo">
+	</div>
+
+	<div class="form-group">
+		<label>Document</label>
+		<input type="file" name="document" class="form-control" file-model="document">
+	</div>
+
+	<button type="submit" class="btn btn-primary">Confirm Reservation</button>
+
+</form>

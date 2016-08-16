@@ -1,0 +1,74 @@
+body {
+    font-family: 'Lato';
+}
+
+#gmaps {
+    width: 100%;
+    height: 450px;
+    border: solid 1px #000;
+}
+
+#hall-map {
+    width: 630px;
+    height: 450px;
+    margin: auto;
+    border: solid 1px #000; 
+    overflow: auto;  
+    white-space: nowrap; 
+    padding: 5px;
+}
+
+.stand {
+	width: 110px;
+	height: 110px;
+    background: rgba(200, 214, 245, 0.57);
+    float: left;
+    margin:5px;
+    border: solid 1px #ccc;
+    box-sizing :border;
+    cursor: pointer;
+}
+
+.stand:hover {
+    background: rgba(153, 179, 236, 0.57);	
+}
+
+.is-free {
+	background: rgba(85, 220, 85, 0.88);
+	padding-top: 10px;
+}
+
+.is-free:hover {
+	background: rgba(67, 187, 67, 0.88);
+}
+
+.stand-info .free{
+	font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+.stand-info .booked{
+	font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+.stand-info .price{
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+.stand-info .logo {
+	width: 60px;
+    height: 60px;
+    margin: 3px auto 19px;
+}
+
+.m-stand img{
+	width: 200px;
+    height: 200px;
+}
